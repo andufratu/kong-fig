@@ -1,0 +1,47 @@
+#
+# Folder definition file
+# This file is generated automatically by Wanderlust/2.15.9 (Almost Unreal).
+#
+# If you edit this file by hand, be sure that comment lines
+# will be washed out by wl-fldmgr.
+#
+
+Gmail{
+	%inbox:"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"Inbox"
+	%Cron TH:"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"Cron TH"
+	%"Google Calendar":"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"Google Calendar"
+	%"dAKuL_maniaK@yahoo.com":"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"dAKuL_maniaK"
+	%Dilbert:"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"Dilbert"
+	%[Gmail]/Mesaje nefinalizate:"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"Mesaje nefinalizate"
+	%[Gmail]/Mesaje trimise:"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"Mesaje trimise"
+	%Postcrossing:"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"Postcrossing"
+	%[Gmail]/Spam:"andrei.fratu@gmail.com"/clear@imap.gmail.com:993!	"Spam"
+}
+Tuenti{
+	%inbox:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Inbox"
+	%Calendar:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Calendar"
+	%Comms:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Comms"
+	%"Comms test messages":"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Comms test messages"
+	%Crons:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Crons"
+	%Crucible:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Crucible"
+	%[Gmail]/Drafts:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Drafts"
+	%HockeyApp:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"HockeyApp"
+	%Hudson:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Hudson"
+	%Ideas:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Ideas"
+	%Jira:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Jira"
+	%Justyna:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Justyna"
+	%Meetup:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Meetup"
+	%Offtopic:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Offtopic"
+	%"Pull requests":"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Pull requests"
+	%Tech:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Tech"
+	%Test:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Test"
+	%Todos:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Todos"
+	%[Gmail]/Sent Mail:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Sent"
+	%Social:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Social"
+	%Stats:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Stats"
+	%Zendesk:"afratu@tuenti.com"/clear@imap.gmail.com:993!	"Zendesk"
+}
+
+# petname definition (access group, folder in access group)
+
+# end of file.

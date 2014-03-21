@@ -1,0 +1,40 @@
+# Super-pretty hg prompt tools
+#
+# author Goran Petrovic <gpetrovic@tuenti.com>
+
+# define pretty colors
+case $TERM in
+eterm-color)
+	D=$'\e[1;40;37m'
+	PINK=$'\e[1;40;35m'
+	RED=$'\e[1;40;31m'
+	GREEN=$'\e[1;40;32m'
+	ORANGE=$'\e[1;40;33m'
+	PURPLE=$'\e[1;40;33m'
+	CYAN=$'\e[1;40;36m'
+	;;
+*)
+	D=$'\e[0;37m'
+	PINK=$'\e[0;35m'
+	RED=$'\e[1;31m'
+	GREEN=$'\e[0;32m'
+	ORANGE=$'\e[0;33m'
+	PURPLE=$'\e[1;33m'
+	CYAN=$'\e[1;36m'
+	;;
+esac
+
+# produce a nice hg output
+hg_ps1() {
+    HGDEFAULT=$(hg showconfig paths.default) # get the paths
+	if [ -z $HGDEFAULT ]; then
+		HGREPO='unknown'
+	else
+    	HGREPO=$( echo $HGDEFAULT | egrep -o "[^/]+\/?$") # get the repo name
+	fi
+	hg prompt "{${D} on ${PINK}{branch}}{${D} at ${ORANGE}{bookmark}}${GREEN}{status}${ORANGE} ${RED}in repo ${CYAN}${HGREPO}" 2> /dev/null
+}
+
+# export the prompt environmental variable
+export PS1='\n${PINK}\u ${D}at ${ORANGE}\h ${D}in ${GREEN}\w$(hg_ps1)${D}\n$ '
+trap 'echo -ne "\e[0m" > $(tty)' DEBUG
